@@ -1,6 +1,6 @@
 FROM openfaas/classic-watchdog:0.18.18 as watchdog
 
-FROM python:3-alpine
+FROM python:3.8-slim-buster
 
 # Allows you to add additional packages via build-arg
 ARG ADDITIONAL_PACKAGE
